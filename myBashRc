@@ -1,4 +1,4 @@
-alias ud='apt update && apt upgrade && apt autoremove'
+alias ud='apt update && apt -y upgrade && apt -y autoremove'
 alias code='code --user-data-dir /root/'
 alias ada='ssh root@lxcars.de'
 alias lin='ssh root@solar-spar.de'
