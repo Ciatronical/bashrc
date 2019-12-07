@@ -7,3 +7,4 @@ mkd () {
   mkdir -p "$*"
   cd "$*"
 }
+alias gitpass='git config credential.helper store' 
