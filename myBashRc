@@ -1,0 +1,1 @@
+alias ud='apt update && apt upgrade'
