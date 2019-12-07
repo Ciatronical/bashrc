@@ -1,1 +1,9 @@
-alias ud='apt update && apt upgrade'
+alias ud='apt update && apt upgrade && apt autoremove'
+alias code='code --user-data-dir /root/'
+alias ada='ssh root@lxcars.de'
+alias lin='ssh root@solar-spar.de'
+alias web='ssh root@baumspezi.de'
+mkd () {
+  mkdir -p "$*"
+  cd "$*"
+}
