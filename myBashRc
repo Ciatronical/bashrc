@@ -7,4 +7,5 @@ mkd () {
   mkdir -p "$*"
   cd "$*"
 }
-alias gitpass='git config credential.helper store' 
+alias gitpass='git config credential.helper store'
+alias tailf ='tail -f'
