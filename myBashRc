@@ -8,4 +8,4 @@ mkd () {
   cd "$*"
 }
 alias gitpass='git config credential.helper store'
-alias tailf ='tail -f'
+alias tailf='tail -f'
