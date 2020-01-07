@@ -1,3 +1,6 @@
+## In /etc/bash.bashrc hinzufügen
+## source <(curl -s https://raw.githubusercontent.com/Ciatronical/bashrc/master/myBashRc)
+
 alias ud='apt update && apt -y upgrade && apt -y autoremove'
 alias code='code --user-data-dir /root/'
 alias ada='ssh root@lxcars.de'
@@ -9,4 +12,7 @@ mkd () {
 }
 alias gitpass='git config credential.helper store'
 alias tailf='tail -f'
-alias iu='/usr/local/ispconfig/server/server.s'
+alias iu='/usr/local/ispconfig/server/server.sh'
+alias gits='git status'
+alias gitc='git commit'
+alias h='curl -s https://raw.githubusercontent.com/Ciatronical/bashrc/master/myBashRc | less'
