@@ -9,3 +9,4 @@ mkd () {
 }
 alias gitpass='git config credential.helper store'
 alias tailf='tail -f'
+alias iu='/usr/local/ispconfig/server/server.s'
