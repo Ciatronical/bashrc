@@ -6,6 +6,7 @@ alias code='code --user-data-dir /root/'
 alias ada='ssh root@lxcars.de'
 alias lin='ssh root@solar-spar.de'
 alias web='ssh root@baumspezi.de'
+alias mel='ssh work@melissa.spdns.de'
 mkd () {
   mkdir -p "$*"
   cd "$*"
