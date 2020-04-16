@@ -22,3 +22,4 @@ alias gitconfig='git config --global user.email "ronny@inter-data.de" &&  git co
 alias gitcl='git clone'
 alias gita='git add'
 alias apr='service apache2 restart && service postgresql restart'
+alias space='du -k -x / | sort -k 1n | tail -20'
