@@ -5,7 +5,7 @@ alias ud='apt update && apt -y upgrade && apt -y autoremove'
 alias code='code --user-data-dir /root/'
 alias ada='ssh root@lxcars.de'
 alias lin='ssh root@solar-spar.de'
-alias web='ssh root@baumspezi.de'
+alias web='ssh root@185.82.21.36'
 alias mel='ssh work@melissa.spdns.de'
 mkd () {
   mkdir -p "$*"
