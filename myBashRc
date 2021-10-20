@@ -2,7 +2,7 @@
 ## source <(curl -s https://raw.githubusercontent.com/Ciatronical/bashrc/master/myBashRc)
 
 alias ud='apt update && apt -y upgrade && apt -y autoremove'
-alias code='code --user-data-dir /root/'
+alias code='code --user-data-dir /mytmp/code/' --no-sandbox
 alias ada='ssh root@lxcars.de'
 alias lin='ssh root@solar-spar.de'
 alias web='ssh root@185.82.21.36'
