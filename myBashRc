@@ -13,7 +13,7 @@ mkd () {
 }
 alias gitpass='git config credential.helper store'
 alias tailf='tail -f'
-alias iu='/usr/local/ispconfig/server/server.sh'
+alias iu='/usr/local/ispconfig/server/server.sh && rm -R /var/cache/ngx_pagespeed/*'
 alias gits='git status'
 alias gitc='git commit'
 alias gitp='git push'
