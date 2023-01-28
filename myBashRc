@@ -32,6 +32,6 @@ alias installgames='apt-get install armagetronad armagetronad-common armagetrona
 
 
 if [[  $SSH_CONNECTION == *"127.0.0.1"* ]]; then
-   alias code='code --user-data-dir /mytmp/code/ --no-sandbox'
+   /usr/share/code/code --user-data-dir /mytmp/code/ --no-sandbox
 fi
 
