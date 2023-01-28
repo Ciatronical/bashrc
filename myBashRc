@@ -2,7 +2,8 @@
 ## source <(curl -s https://raw.githubusercontent.com/Ciatronical/bashrc/master/myBashRc)
 
 alias ud='apt update && apt -y upgrade && apt -y autoremove'
-alias code='ssh -X localhost'
+## Code als root ausführen 
+alias coder='ssh -X root@localhost'
 alias ada='ssh root@lxcars.de'
 alias lin='ssh root@solar-spar.de'
 alias web='ssh root@185.82.21.36'
