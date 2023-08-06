@@ -7,7 +7,7 @@ alias coder='ssh -X root@localhost'
 alias ada='ssh root@lxcars.de'
 alias lin='ssh root@solar-spar.de'
 alias web='ssh root@185.82.21.36'
-alias mel='ssh work@melissa.spdns.de'
+alias mel='ssh root@melissa.spdns.de'
 mkd () {
   mkdir -p "$*"
   cd "$*"
@@ -34,5 +34,11 @@ alias installgames='apt-get install armagetronad armagetronad-common armagetrona
 
 if [[  $SSH_CONNECTION == *"127.0.0.1"* ]]; then
    /usr/share/code/code --user-data-dir /mytmp/code/ --no-sandbox &
+   if [ -d "$/var/www/dev/kivitendo/" ]; then
+      cd /var/www/dev/kivitendo/
+   else
+      cd /var/www/kivitendo/
+   fi
+   git pull
 fi
 
