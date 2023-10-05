@@ -1,7 +1,7 @@
 ## In /etc/bash.bashrc hinzufügen
 ## source <(curl -s https://raw.githubusercontent.com/Ciatronical/bashrc/master/myBashRc)
 
-alias ud='apt update && apt -y dist-upgrade && apt -y autoremove'
+alias ud='apt update && apt dist-upgrade && apt autoremove'
 ## Code als root ausführen 
 alias coder='ssh -X root@localhost'
 alias ada='ssh root@lxcars.de'
