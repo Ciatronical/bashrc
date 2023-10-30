@@ -34,7 +34,7 @@ alias installgames='apt-get install armagetronad armagetronad-common armagetrona
 
 if [[  $SSH_CONNECTION == *"127.0.0.1"* ]]; then
    /usr/share/code/code --user-data-dir /mytmp/code/ --no-sandbox &
-   if [ -d "$/var/www/dev/kivitendo-crm/" ]; then
+   if [ -d "/var/www/dev/kivitendo-crm/" ]; then
       cd /var/www/dev/kivitendo-crm
    else
       cd /var/www/kivitendo-crm
