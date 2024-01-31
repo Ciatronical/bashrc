@@ -33,6 +33,8 @@ alias installgames='apt-get install armagetronad armagetronad-common armagetrona
 
 alias het='ssh fdfach@www336.your-server.de -p222'
 
+alias bigfiles='du -k -x / | sort -k 1n | tail -20'
+
 
 if [[  $SSH_CONNECTION == *"127.0.0.1"* ]]; then
    /usr/share/code/code --user-data-dir /mytmp/code/ --no-sandbox &
