@@ -4,7 +4,7 @@
 alias ud='apt update && apt dist-upgrade && apt autoremove'
 ## Code als root ausführen
 alias coder='ssh -X root@localhost'
-alias ada='ssh root@lxcars.de'
+alias ada='ssh root@v2201910105591100502.luckysrv.de'
 alias lin='ssh root@solar-spar.de'
 alias web='ssh root@185.82.21.36'
 alias mel='ssh root@melissa.spdns.de'
