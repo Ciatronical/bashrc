@@ -45,3 +45,35 @@ if [[  $SSH_CONNECTION == *"127.0.0.1"* ]]; then
    fi
    git pull
 fi
+
+
+saveDb() {
+  if [ -z "$1" ]; then
+    echo "Usage: saveDb <datenbankname>"
+    return 1
+  fi
+  local DB_NAME="$1"
+  sudo -u postgres pg_dump "$DB_NAME" > /mytmp/"$DB_NAME".sql
+}
+
+restoreDb() {
+  if [ -z "$1" ]; then
+    echo "Usage: restoreDb <datenbankname>"
+    return 1
+  fi
+  local DB_NAME="$1"
+
+  echo "Starte PostgreSQL neu..."
+  sudo systemctl restart postgresql
+
+  echo "Lösche Datenbank '${DB_NAME}'..."
+  sudo -u postgres dropdb "$DB_NAME"
+
+  echo "Erstelle Datenbank '${DB_NAME}' neu..."
+  sudo -u postgres createdb "$DB_NAME"
+
+  echo "Spiele Backup aus /mytmp/${DB_NAME}.sql ein..."
+  sudo -u postgres psql "$DB_NAME" < /mytmp/"$DB_NAME".sql
+
+  echo "Datenbank '${DB_NAME}' wurde erfolgreich wiederhergestellt."
+}
