@@ -7,7 +7,7 @@ alias coder='ssh -X root@localhost'
 alias ada='ssh root@v2201910105591100502.luckysrv.de'
 alias lin='ssh root@v220191010559199420.bestsrv.de'
 alias web='ssh root@185.82.21.36'
-alias mel='ssh root@melissa.spdns.de'
+alias mel='ssh melissa.spdns.de'
 mkd () {
   mkdir -p "$*"
   cd "$*"
