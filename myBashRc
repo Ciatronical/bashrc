@@ -78,3 +78,11 @@ restoreDb() {
 
   echo "Datenbank '${DB_NAME}' wurde erfolgreich wiederhergestellt."
 }
+
+
+# Git Farben für Rot-Grün-Blindheit optimieren
+if [ -x "$(command -v git)" ]; then
+    git config --global color.ui true
+    git config --global color.diff.old "magenta bold"
+    git config --global color.diff.new "cyan bold"
+fi
