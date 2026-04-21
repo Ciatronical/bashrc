@@ -80,9 +80,12 @@ restoreDb() {
 }
 
 
-# Git Farben für Rot-Grün-Blindheit optimieren
-if [ -x "$(command -v git)" ]; then
-    git config --global color.ui true
-    git config --global color.diff.old "magenta bold"
-    git config --global color.diff.new "cyan bold"
-fi
+alias gitcolor='git config --global color.ui always && \
+git config --global color.diff.meta "yellow bold" && \
+git config --global color.diff.frag "magenta bold" && \
+git config --global color.diff.old "red bold" && \
+git config --global color.diff.new "cyan bold" && \
+git config --global color.status.added "cyan bold" && \
+git config --global color.status.changed "yellow bold" && \
+git config --global color.status.untracked "magenta bold" && \
+echo "Git-Farben wurden für Rot-Grün-Blindheit optimiert!"'
