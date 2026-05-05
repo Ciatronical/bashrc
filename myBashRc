@@ -83,9 +83,31 @@ restoreDb() {
 alias gitcolor='git config --global color.ui always && \
 git config --global color.diff.meta "yellow bold" && \
 git config --global color.diff.frag "magenta bold" && \
-git config --global color.diff.old "red bold" && \
-git config --global color.diff.new "cyan bold" && \
-git config --global color.status.added "cyan bold" && \
+git config --global color.diff.func "blue" && \
+git config --global color.diff.commit "yellow bold" && \
+git config --global color.diff.old "red bold ul" && \
+git config --global color.diff.new "blue bold" && \
+git config --global color.diff.whitespace "magenta reverse" && \
+git config --global color.status.header "white" && \
+git config --global color.status.added "blue bold" && \
 git config --global color.status.changed "yellow bold" && \
 git config --global color.status.untracked "magenta bold" && \
+<<<<<<< HEAD
 echo "Git-Farben wurden für Rot-Grün-Blindheit optimiert!"'
+=======
+git config --global color.status.branch "cyan bold" && \
+git config --global color.status.nobranch "red bold ul" && \
+git config --global color.branch.current "cyan bold reverse" && \
+git config --global color.branch.local "cyan" && \
+git config --global color.branch.remote "magenta" && \
+git config --global color.branch.upstream "yellow" && \
+git config --global color.branch.plain "white" && \
+git config --global color.decorate.branch "cyan bold" && \
+git config --global color.decorate.remoteBranch "magenta bold" && \
+git config --global color.decorate.tag "yellow bold" && \
+git config --global color.decorate.HEAD "blue bold reverse" && \
+git config --global color.grep.match "yellow bold reverse" && \
+git config --global color.grep.filename "magenta" && \
+git config --global color.grep.linenumber "cyan" && \
+echo "Git-Farben wurden für Rot-Grün-Blindheit (Deuteranopie/Protanopie) optimiert!"'
+>>>>>>> a376217 (Git Farben geändert)
